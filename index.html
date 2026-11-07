@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Deutsche Artikel lernen – der, die, das" />
+    <title>Artikel lernen</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1 class="app-name">Artikel lernen</h1>
+        <p class="app-subtitle" id="app-subtitle">Thema wählen</p>
+      </header>
+
+      <section class="home" id="home" aria-label="Themen">
+        <div class="category-list" id="category-list"></div>
+      </section>
+
+      <section class="practice" id="practice" hidden>
+        <button type="button" class="back-btn" id="back-btn">
+          ← Themen
+        </button>
+
+        <nav class="mode-toggle" role="tablist" aria-label="Modus">
+          <button
+            type="button"
+            class="mode-btn is-active"
+            role="tab"
+            id="tab-learn"
+            aria-selected="true"
+            aria-controls="panel-main"
+            data-mode="learn"
+          >
+            Lernen
+          </button>
+          <button
+            type="button"
+            class="mode-btn"
+            role="tab"
+            id="tab-test"
+            aria-selected="false"
+            aria-controls="panel-main"
+            data-mode="test"
+          >
+            Test
+          </button>
+        </nav>
+
+        <main class="panel" id="panel-main" role="tabpanel" aria-labelledby="tab-learn">
+          <article class="card" id="card">
+            <div class="card-image-wrap">
+              <img
+                class="card-image"
+                id="card-image"
+                src="images/apple.svg"
+                alt=""
+                width="240"
+                height="240"
+                hidden
+              />
+              <span class="card-emoji" id="card-emoji" aria-hidden="true"></span>
+            </div>
+            <p class="card-title" id="card-title"></p>
+
+            <div class="test-phrase" id="test-phrase" hidden>
+              <label class="sr-only" for="article-input">Artikel</label>
+              <span class="revealed-article" id="revealed-article" hidden></span>
+              <input
+                type="text"
+                id="article-input"
+                class="article-input"
+                placeholder="…"
+                maxlength="3"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+                enterkeyhint="done"
+                aria-describedby="article-hint"
+              />
+              <span class="noun" id="test-noun"></span>
+              <button
+                type="button"
+                class="wrong-mark"
+                id="wrong-mark"
+                hidden
+                aria-label="Falsch — tippen zum Neuversuch"
+              >
+                ×
+              </button>
+              <span class="sr-only" id="test-status" role="status" aria-live="polite"></span>
+            </div>
+
+            <div class="test-area" id="test-area" hidden>
+              <p class="article-hint" id="article-hint" aria-hidden="true">
+                <span class="article article-der">der</span>
+                <span class="sep"> / </span>
+                <span class="article article-die">die</span>
+                <span class="sep"> / </span>
+                <span class="article article-das">das</span>
+              </p>
+            </div>
+
+            <nav class="card-nav" aria-label="Karten">
+              <button type="button" class="nav-btn" id="prev-btn" aria-label="Vorherige Karte">
+                ‹
+              </button>
+              <p class="card-counter" id="card-counter" aria-live="polite"></p>
+              <button type="button" class="nav-btn" id="next-btn" aria-label="Nächste Karte">
+                ›
+              </button>
+            </nav>
+          </article>
+        </main>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

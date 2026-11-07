@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Apfel">
+  <rect width="240" height="240" fill="#fff5f7"/>
+  <ellipse cx="120" cy="210" rx="48" ry="8" fill="#f0d0d8" opacity="0.6"/>
+  <path d="M120 48c-4 18-2 32 8 44" fill="none" stroke="#5a8f4a" stroke-width="6" stroke-linecap="round"/>
+  <ellipse cx="148" cy="58" rx="28" ry="14" transform="rotate(-28 148 58)" fill="#7cb86a"/>
+  <path d="M78 100c-22 18-30 48-22 78 8 32 36 52 64 52s56-20 64-52c8-30 0-60-22-78-14-12-30-18-42-18s-28 6-42 18z" fill="#e85d5d"/>
+  <path d="M120 82c-8 0-16 2-24 6 10 4 18 6 24 6s14-2 24-6c-8-4-16-6-24-6z" fill="#d44545" opacity="0.35"/>
+  <ellipse cx="96" cy="120" rx="12" ry="20" fill="#fff" opacity="0.22"/>
+</svg>

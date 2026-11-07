@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Buch">
+  <rect width="240" height="240" fill="#fff5f7"/>
+  <ellipse cx="120" cy="212" rx="52" ry="8" fill="#f0d0d8" opacity="0.55"/>
+  <path d="M56 58h56c8 0 14 4 18 10v112c-6-6-14-8-22-8H56V58z" fill="#6b9ecf"/>
+  <path d="M184 58h-56c-8 0-14 4-18 10v112c6-6 14-8 22-8h52V58z" fill="#5a8fbe"/>
+  <path d="M112 68c6 4 10 8 10 14v98" fill="none" stroke="#f7f1e8" stroke-width="3"/>
+  <path d="M128 68c-6 4-10 8-10 14v98" fill="none" stroke="#f7f1e8" stroke-width="3"/>
+  <rect x="68" y="78" width="28" height="6" rx="2" fill="#e8f2fb" opacity="0.85"/>
+  <rect x="68" y="92" width="36" height="5" rx="2" fill="#e8f2fb" opacity="0.65"/>
+  <rect x="144" y="78" width="28" height="6" rx="2" fill="#d7e8f7" opacity="0.85"/>
+  <rect x="136" y="92" width="36" height="5" rx="2" fill="#d7e8f7" opacity="0.65"/>
+</svg>
